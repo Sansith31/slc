@@ -1,6 +1,6 @@
 #include <iostream>
-#include <cstdlib> 
-#include <ctime>   
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -8,9 +8,9 @@ int die1, die2, die3, total;
 int rollDice()
 {
 
-    die1 = rand() % 6 + 1; 
-    die2 = rand() % 6 + 1; 
-    die3 = rand() % 6 + 1; 
+    die1 = rand() % 6 + 1;
+    die2 = rand() % 6 + 1;
+    die3 = rand() % 6 + 1;
     total = die1 + die2 + die3;
     return die1 + die2 + die3;
 }
@@ -51,6 +51,7 @@ int main()
     {
         cout << "Your point is: " << sum << endl;
         continueRolling(sum);
+        std::cin.get();
     }
 
     return 0;
